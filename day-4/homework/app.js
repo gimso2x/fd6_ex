@@ -6,12 +6,36 @@ function renderHtml(component) {
     screen.innerHTML = component;
 }
 
-function button(props) {
-    // TODO
+// function button(props) {
+//     return `<button id="${props.id}">${props.children}</button>`
+// }
+
+function button({id, children}) {
+    return `<button id="${id}">${children}</button>`
 }
 
 function $(selector) {
-    // TODO
+    const el = typeof selector === "string" ? document.querySelector(selector) : selector
+    // let el;
+    // if (typeof selector === "string") {
+    //     el = document.querySelector(selector);
+    // } else {
+    //     el = selector;
+    // }
+    return {
+        on(eventName, callback) {
+            el.addEventListener(eventName, callback)
+        },
+        addClass(className) {
+            el.classList.add(className)
+        },
+        removeClass(className) {
+            el.classList.remove(className)
+        },
+        hasClass(className) {
+            return el.classList.contains(className)
+        }
+    }
 }
 
 

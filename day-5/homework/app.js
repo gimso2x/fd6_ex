@@ -28,3 +28,20 @@ const people = [{
  * 3. 이름이 박지성인 사람 객체 찾기
  * 4. 이름이 박지성인 사람의 index 찾기
  */
+
+const adult = people.filter(function(person){
+    return person.age >= 19
+})
+
+const kims = people.filter(function(person){
+    return person.name.startsWith("")
+})
+
+const kimta = people.find(function(person) {
+    return person.name === "김태희"
+})
+
+const parkIndex = people.findIndex(function(person) {
+    return person.name === "김태희"
+})
+
