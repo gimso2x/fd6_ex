@@ -1,0 +1,17 @@
+{
+  "name": "day-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "npx nodemon src/server.js",
+    "test": "test !!!! hihihi"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.15.0",
+    "react": "^16.13.1"
+  }
+}
