@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon src/server.js",
+    "start": "npx nodemon src/expressServer.js",
     "prettier:all": "npx prettier --write .",
     "test": "jest"
   },
@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
     "jest": "^26.4.0",
     "prettier": "^2.0.5"
   }
