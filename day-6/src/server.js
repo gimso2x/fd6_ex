@@ -1,5 +1,5 @@
 const http = require("http");
-const logger = require("./log");
+const logger = require("./logger");
 
 const server = http.createServer((req, res) => {
     logger.log(req.headers["user-agent"])
