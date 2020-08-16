@@ -5,7 +5,7 @@ let fileName = ""
 function log(message) {
     const date = new Date();
     const logDate = dateFns.format(date, "yyyy.MM.dd HH:mm:ss")
-    fileName = `log_${dateFns.format(date, "yyy_MM_dd_HH")}.txt`
+    fileName = `log_${dateFns.format(date, "yyyy_MM_dd_HH")}.txt`
 
     fs.appendFile(fileName, `${logDate} :: ${message}\n`, "utf-8", (err) => {
       if (err) {
