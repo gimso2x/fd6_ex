@@ -1,4 +1,4 @@
-{
+module.exports = {
   "products": [{
     "id": "1234",
     "img": "//thumbnail10.coupangcdn.com/thumbnails/remote/90x90ex/image/product/image/vendoritem/2018/08/21/3096549338/9b12817c-d231-4b5a-b8c9-52b5858802af.jpg",
