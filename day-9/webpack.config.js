@@ -1,6 +1,8 @@
+const mode = process.env.NODE_ENV === "production" ? "production" : "development"
+const watch = mode !== "production"
 module.exports = {
-  mode: "development",
-  watch: true,
+  mode,
+  watch,
   module: {
     rules: [{
       test: /\.js/,

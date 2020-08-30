@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "NODE_ENV=development webpack",
+    "build": "NODE_ENV=production webpack",
     "server": "npx live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
