@@ -34,7 +34,7 @@ export default function App() {
                 {product.price}
               </td>
               <td>
-                <select>
+                <select defaultValue={1}>
                   <option>1</option>
                 </select>
               </td>
