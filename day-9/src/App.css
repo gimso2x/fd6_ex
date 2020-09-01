@@ -1,0 +1,4 @@
+option:disabled{background: #ddd;}
+.soldOut{color: red;}
+.soldOut::before{content: '=============';display: block;color: #000;}
+.mainTr{padding: 20px 0;font-size: 20px;}
